@@ -286,7 +286,7 @@
             <h4 data-en="Direct" data-ar="تواصل مباشر">Direct</h4>
             <ul>
               <li><a href="mailto:amgademad447@gmail.com">amgademad447@gmail.com</a></li>
-              <li><a href="tel:+201202495945">+20 120 249 5945</a></li>
+              <li><a href="tel:+201202495945">+201202495945</a></li>
               <li><a href="#" class="wa-link" id="waInline" data-en="WhatsApp ↗" data-ar="واتساب ↗">WhatsApp ↗</a></li>
               <li><a href="{{ asset('front/uploads/Amgad_Emadeldin_Laravel_Developer.pdf') }}" download data-en="Download CV ↗" data-ar="تحميل السيرة ↗">Download CV ↗</a></li>
             </ul>

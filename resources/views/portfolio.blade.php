@@ -151,7 +151,7 @@
         <div class="eyebrow mt-2" data-en="About" data-ar="نبذة">About</div>
       </div>
       <div>
-        <h2><span data-en="A quiet kind" data-ar="حِرفة هادئة">A quiet kind</span> <em class="italic" data-en="of craft." data-ar="من الإتقان.">of craft.</em></h2>
+        <h2><span data-en="Software engineering" data-ar="هندسة برمجيات">Software engineering</span> <em class="italic" data-en="with professional standards." data-ar="بمعايير احترافية.">with professional standards.</em></h2>
       </div>
     </div>
     <div class="about-grid">
@@ -203,7 +203,7 @@
         <div class="eyebrow mt-2" data-en="Stack" data-ar="الأدوات">Stack</div>
       </div>
       <div>
-        <h2><span data-en="Tools I reach" data-ar="الأدوات التي أمدّ يدي إليها">Tools I reach</span> <em class="italic" data-en="for first." data-ar="أولاً.">for first.</em></h2>
+        <h2><span data-en="The tools" data-ar="الادوات">The tools</span> <em class="italic" data-en="I use." data-ar="التي استخدمها.">I use.</em></h2>
         <p class="lede" data-en="A practical kit, refined over three years on production systems. PHP and Laravel sit at the centre; the rest is whatever the problem actually needs."
                        data-ar="مجموعة أدوات عملية صُقلت عبر ثلاث سنوات من العمل على أنظمة إنتاجية. Laravel و PHP في القلب، والباقي حسب ما يتطلبه المشروع.">A practical kit, refined over three years.</p>
       </div>
@@ -316,7 +316,7 @@
   </a>
 
   <!-- Tweaks trigger -->
-  <button class="tweak-trigger" id="tweakTrigger" data-cursor-label="Tweaks" aria-label="Tweaks">⚙</button>
+  <button class="tweak-trigger" id="tweakTrigger" data-cursor-label="Tweaks" aria-label="Tweaks" style="font-size: 1.5rem;">⚙</button>
 
   <!-- Tweaks panel -->
   <div class="tweaks" id="tweaks">

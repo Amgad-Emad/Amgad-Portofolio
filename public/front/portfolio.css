@@ -66,8 +66,9 @@ html[dir="rtl"] .mono { font-family: var(--font-mono); }
   margin-inline: auto;
   padding-inline: 1.5rem;
 }
-/* Mobile first: reduce padding on very small screens */
-@media (max-width: 575px) { .container { padding-inline: 1rem; } }
+/* Keep comfortable breathing room from screen edges on mobile */
+@media (max-width: 575px) { .container { padding-inline: 1.25rem; } }
+@media (max-width: 400px) { .container { padding-inline: 1.125rem; } }
 /* Small devices (landscape phones, portrait tablets) */
 @media (min-width: 576px) { .container { max-width: 540px; } }
 /* Tablets (portrait and landscape) */
@@ -249,11 +250,11 @@ html[dir="rtl"] .loader-bar::after { transform-origin: right; }
 
 /* ---- Hero ---- */
 .hero {
-  min-height: 100vh; padding: 140px 0 80px;
+  min-height: 100vh; padding-block: 140px 80px;
   position: relative; display: flex; flex-direction: column; justify-content: center;
 }
-@media (max-width: 768px) { .hero { padding: 100px 0 60px; } }
-@media (max-width: 576px) { .hero { padding: 80px 0 40px; } }
+@media (max-width: 768px) { .hero { padding-block: 100px 60px; } }
+@media (max-width: 576px) { .hero { padding-block: 80px 40px; } }
 .hero-meta {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px;
   margin-bottom: 60px;
@@ -265,18 +266,34 @@ html[dir="rtl"] .loader-bar::after { transform-origin: right; }
 
 .hero-title {
   font-family: var(--font-display); font-weight: 400;
-  font-size: clamp(60px, 12vw, 200px); line-height: .92;
+  font-size: clamp(60px, 12vw, 200px); line-height: 1.2;
   letter-spacing: -.04em; margin: 0; color: var(--ink);
+  /* `anywhere` is more aggressive than `break-word`: it also breaks Arabic/CJK
+     glyphs that lack natural break points, so long words can't push past the
+     container edge on mobile. */
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 .hero-title .line { display: block; overflow: hidden; }
 .hero-title .line .inner {
   display: inline-block; transform: translateY(110%);
   animation: rise 1.1s cubic-bezier(.2,.9,.2,1) forwards;
+  max-width: 100%;
 }
 .hero-title .line:nth-child(2) .inner { animation-delay: .15s; }
 .hero-title .line:nth-child(3) .inner { animation-delay: .3s; }
 
 html[dir="rtl"] .hero-title { font-family: var(--font-ar-display); letter-spacing: 0; }
+/* Arabic glyphs are noticeably wider than the Instrument Serif Latin set, so
+   the title overflows at viewports where the Latin version still fits. Drop
+   the size for RTL on tablets and phones. */
+@media (max-width: 900px) {
+  html[dir="rtl"] .hero-title { font-size: clamp(40px, 9vw, 78px); }
+}
+@media (max-width: 480px) {
+  html[dir="rtl"] .hero-title { font-size: clamp(30px, 8vw, 52px); }
+}
 
 .hero-bottom { margin-top: 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: end; }
 .hero-bottom .col { display: flex; flex-direction: column; gap: 12px; }
@@ -303,52 +320,62 @@ html[dir="rtl"] .hero-scroll { right: auto; left: 32px; }
   50% { transform: scaleY(0.3); transform-origin: top; }
 }
 
+/* Allow long hero-title phrases (e.g. "engineered with care." or the wider
+   Arabic glyphs) to wrap instead of being clipped by .line's overflow:hidden.
+   Switching .inner to block lets it fill the available width and wrap;
+   .line auto-expands to fit, so the rise animation still hides the
+   pre-animation translateY(110%) state. Applied up to 900px to cover tablets
+   where the RTL title still overflows. */
+@media (max-width: 900px) {
+  .hero-title .line .inner { display: block; max-width: 100%; white-space: normal; }
+}
+
 /* Mobile optimization: Galaxy S20 Ultra & similar devices */
 @media (max-width: 360px) {
-  .hero { padding: 60px 0 30px; min-height: auto; }
+  .hero { padding-block: 60px 30px; min-height: auto; }
   .hero-meta { margin-bottom: 30px; gap: 12px; font-size: 9px; }
   .hero-meta-block { gap: 2px; }
-  .hero-title { font-size: clamp(32px, 10vw, 56px); letter-spacing: -0.02em; }
+  .hero-title { font-size: clamp(30px, 9vw, 52px); letter-spacing: -0.02em; }
   .hero-bottom { margin-top: 40px; gap: 20px; }
   .hero-bottom p { font-size: 14px; max-width: 30ch; }
   .hero-scroll { display: none; }
-  .section { padding: 32px 0; }
+  .section { padding-block: 32px; }
   .section-head h2 { font-size: clamp(24px, 6vw, 32px); }
   button, a, .btn { min-height: 44px; padding: 12px 16px; }
-  .container { padding-inline: 0.75rem; }
+  .container { padding-inline: 1rem; }
 }
 
 @media (max-width: 480px) {
   body { font-size: 15px; }
-  .nav { padding: 14px 16px; }
+  .nav { padding: 14px 18px; }
   .nav-logo { font-size: clamp(12px, 3vw, 16px); }
-  .hero { padding: 70px 0 50px; }
+  .hero { padding-block: 70px 50px; }
   .hero-meta { font-size: 9px; }
-  .hero-title { font-size: clamp(36px, 11vw, 68px); }
+  .hero-title { font-size: clamp(34px, 10vw, 60px); }
   .hero-bottom { gap: 24px; }
   .hero-bottom h4 { font-size: 10px; }
   .hero-bottom p { font-size: 15px; line-height: 1.4; }
-  
-  .section { padding: 48px 0; }
+
+  .section { padding-block: 48px; }
   .section-head h2 { font-size: clamp(28px, 8vw, 42px); }
   .section-head .lede { font-size: 15px; margin-top: 12px; }
-  
+
   .work-card h3 { font-size: 24px; }
   .featured h3 { font-size: clamp(28px, 6vw, 48px); }
   .featured p { font-size: 15px; margin-bottom: 20px; }
-  
+
   .contact-mark { font-size: clamp(48px, 18vw, 72px); }
   .contact { padding: 32px 20px 16px; }
-  
+
   /* Touch targets for interactive elements */
   a, button, [role="button"] { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; }
   .lang-toggle { min-height: 40px; padding: 8px 12px; }
-  
+
   /* Better spacing for thumbs */
   .hero-bottom .col { gap: 10px; }
   .work-grid { gap: 32px; }
   .stack { gap: 12px; }
-  
+
   /* Hide non-essential elements on ultra-narrow */
   @media (max-width: 360px) {
     .hero-meta-block:nth-child(3),
@@ -375,10 +402,13 @@ html[dir="rtl"] .marquee-track { animation: scrollRtl 40s linear infinite; }
 @keyframes scrollRtl { to { transform: translateX(50%); } }
 
 /* ---- Section frame ---- */
-.section { padding: 120px 0; position: relative; }
-@media (max-width: 900px) { .section { padding: 80px 0; } }
-@media (max-width: 768px) { .section { padding: 60px 0; } }
-@media (max-width: 576px) { .section { padding: 40px 0; } }
+/* Use padding-block so the container's padding-inline survives the cascade
+   (a `padding: Y 0` shorthand here would zero out horizontal padding and
+   make content sit flush against the screen edges on mobile). */
+.section { padding-block: 120px; position: relative; }
+@media (max-width: 900px) { .section { padding-block: 80px; } }
+@media (max-width: 768px) { .section { padding-block: 60px; } }
+@media (max-width: 576px) { .section { padding-block: 40px; } }
 .section-head {
   display: grid; grid-template-columns: 140px 1fr; gap: 40px;
   margin-bottom: 80px; align-items: baseline;
@@ -391,7 +421,7 @@ html[dir="rtl"] .marquee-track { animation: scrollRtl 40s linear infinite; }
 html[dir="rtl"] .section-head h2 { font-family: var(--font-ar-display); letter-spacing: 0; }
 .section-head .lede { margin-top: 18px; font-size: 17px; color: var(--muted); max-width: 52ch; text-wrap: pretty; }
 @media (max-width: 720px) {
-  .section { padding: 80px 0; }
+  .section { padding: 55px 16px; }
   .section-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 50px; }
 }
 @media (max-width: 576px) {
@@ -597,10 +627,10 @@ html[dir="rtl"] .featured h3 { font-family: var(--font-ar-display); letter-spaci
   font-family: var(--font-mono); font-size: 10px; color: var(--muted);
 }
 @media (max-width: 900px) { .stack { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .stack { grid-template-columns: 1fr; }
-  .stack-cell { 
-    padding: 20px 16px; 
+  .stack-cell {
+    padding: 20px 16px;
     min-height: 140px;
   }
   .stack-cell .glyph { font-size: 32px; }

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="cream">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-en="Amgad Emadeldin — Full-Stack Engineer" data-ar="أمجد عماد الدين — مهندس برمجيات">Amgad Emadeldin — Full-Stack Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span data-en="Amgad" data-ar="أمجد">Amgad</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-label" id="cursorLabel"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo magnetic">
+      <span data-en="Amgad" data-ar="أمجد">Amgad</span><span class="dot"></span>
+    </a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link"><span class="num">01</span><span data-en="Work" data-ar="الأعمال">Work</span></a>
+      <a href="#about" class="nav-link"><span class="num">02</span><span data-en="About" data-ar="نبذة">About</span></a>
+      <a href="#stack" class="nav-link"><span class="num">03</span><span data-en="Stack" data-ar="الأدوات">Stack</span></a>
+      <a href="#exp" class="nav-link"><span class="num">04</span><span data-en="Journey" data-ar="المسيرة">Journey</span></a>
+      <button class="lang-toggle" id="langToggle" data-cursor-label="Toggle">
+        <span class="lang-en on">EN</span><span class="sep">/</span><span class="lang-ar">عربي</span>
+      </button>
+      <a href="#contact" class="nav-cta magnetic">
+        <span class="pulse"></span>
+        <span data-en="Available for work" data-ar="متاح للعمل">Available for work</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="top" class="hero container">
+    <div class="hero-meta">
+      <div class="hero-meta-block"><span data-en="Portfolio" data-ar="معرض الأعمال">Portfolio</span><strong>v.2026.01</strong></div>
+      <div class="hero-meta-block"><span data-en="Based in" data-ar="المقر">Based in</span><strong data-en="Cairo, EG" data-ar="القاهرة، مصر">Cairo, EG</strong></div>
+      <div class="hero-meta-block"><span data-en="Local time" data-ar="التوقيت المحلي">Local time</span><strong id="localTime">—</strong></div>
+      <div class="hero-meta-block"><span data-en="Status" data-ar="الحالة">Status</span><strong data-en="Open to work" data-ar="متاح للعمل">Open to work</strong></div>
+    </div>
+    <h1 class="hero-title">
+      <span class="line"><span class="inner" data-en="Full-stack" data-ar="مهندس">Full-stack</span></span>
+      <span class="line"><span class="inner italic" data-en="systems" data-ar="أنظمة">systems</span></span>
+      <span class="line"><span class="inner" data-en="engineered with care." data-ar="مبنية بإتقان.">engineered with care.</span></span>
+    </h1>
+    <div class="hero-bottom stagger" data-reveal>
+      <div class="col">
+        <h4 data-en="The work" data-ar="العمل">The work</h4>
+        <p data-en="LMS platforms, multi-vendor e-commerce, business systems and AI-powered apps — written in Laravel with clean, scalable architecture."
+           data-ar="منصات تعليم إلكتروني، تجارة إلكترونية متعددة البائعين، أنظمة أعمال، وتطبيقات مدعومة بالذكاء الاصطناعي — مبنية بـ Laravel ببنية نظيفة وقابلة للتطوير.">
+          LMS platforms, multi-vendor e-commerce, business systems and AI-powered apps — written in Laravel with clean, scalable architecture.
+        </p>
+      </div>
+      <div class="col">
+        <h4 data-en="The approach" data-ar="المنهج">The approach</h4>
+        <p data-en="Clean architecture, thoughtful schemas, secure-by-default. I obsess over the parts users never see — and it shows in the ones they do."
+           data-ar="بنية نظيفة، قواعد بيانات مدروسة، وأمان منذ البداية. أهتم بالتفاصيل التي لا يراها المستخدم — لتنعكس على ما يراه.">
+          Clean architecture, thoughtful schemas, secure-by-default.
+        </p>
+      </div>
+      <div class="col">
+        <h4 data-en="Selected work" data-ar="مختارات من العمل">Selected work</h4>
+        <p>ExCraft · XS Lawyer · Blndd · HIRED HR · Holistic Path · Brain Tech · Gala Global · Biry Suits.</p>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span data-en="Scroll" data-ar="مرّر للأسفل">Scroll</span>
+      <span class="arrow"></span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- WORK -->
+  <section id="work" class="section container">
+    <div class="section-head" data-reveal>
+      <div>
+        <div class="mono" style="color: var(--muted); font-size: 12px;">— 01</div>
+        <div class="eyebrow mt-2" data-en="Selected work" data-ar="مختارات من العمل">Selected work</div>
+      </div>
+      <div>
+        <h2><span data-en="Things I shipped" data-ar="مشاريع تم تسليمها">Things I shipped</span> <em class="italic" data-en="recently." data-ar="مؤخراً.">recently.</em></h2>
+        <p class="lede" data-en="A short list of production-grade platforms shipped over the past three years. Each one taught me something new about scale, schemas, or the seam between back and front."
+                       data-ar="قائمة قصيرة من المنصات الإنتاجية التي تم تسليمها خلال السنوات الثلاث الماضية. كل واحدة منها علّمتني شيئاً جديداً عن التوسع أو هيكلة البيانات أو الربط بين الواجهة والخلفية.">A short list of production-grade platforms shipped over the past three years.</p>
+      </div>
+    </div>
+    <div class="work-grid stagger" data-reveal id="workGrid"></div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section container">
+    <div class="featured tilt" data-cursor-label="Open case study" data-reveal>
+      <div>
+        <div class="featured-tag" data-en="Case study · Production" data-ar="حالة دراسية · إنتاج">Case study · Production</div>
+        <h3 data-en="ExCraft — a multi-module business platform." data-ar="ExCraft — منصة أعمال متعددة الوحدات.">ExCraft — a multi-module business platform.</h3>
+        <p data-en="One Laravel codebase, four products: a learning management system, accounting suite, multi-vendor e-commerce, and consultation booking. Scalable database schemas, secure payments, and the operational glue holding it all together."
+           data-ar="قاعدة كود واحدة بـ Laravel، وأربعة منتجات: نظام إدارة تعلّم، مجموعة محاسبية، تجارة إلكترونية متعددة البائعين، وحجز الاستشارات. هياكل قواعد بيانات قابلة للتوسع، ومدفوعات آمنة، وكل ما يربط النظام معاً.">
+          One Laravel codebase, four products.
+        </p>
+        <div class="contact-actions mb-4">
+          <a class="btn-pill" href="#" data-cursor-label="Read more">
+            <span data-en="Read the case study" data-ar="اقرأ الدراسة">Read the case study</span><span class="arrow">→</span>
+          </a>
+          <a class="btn-pill btn-ghost" href="#">
+            <span data-en="Visit ExCraft" data-ar="زيارة ExCraft">Visit ExCraft</span><span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="featured-stats">
+          <div class="s"><div class="k">4</div><div class="v" data-en="Modules in one stack" data-ar="وحدات في حزمة واحدة">Modules in one stack</div></div>
+          <div class="s"><div class="k">∞</div><div class="v" data-en="Vendors supported" data-ar="عدد البائعين">Vendors supported</div></div>
+          <div class="s"><div class="k">Laravel</div><div class="v">PHP · MySQL · Blade</div></div>
+        </div>
+      </div>
+      <div class="featured-visual">
+        <a class="browser" href="https://excraft.co" target="_blank" rel="noopener" data-cursor-label="Visit ExCraft">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="url">excraft.co</span>
+          </div>
+          <img class="browser-img" src="uploads/img/excraft.png" alt="ExCraft platform screenshot" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <div class="section-head" data-reveal>
+      <div>
+        <div class="mono" style="color: var(--muted); font-size: 12px;">— 02</div>
+        <div class="eyebrow mt-2" data-en="About" data-ar="نبذة">About</div>
+      </div>
+      <div>
+        <h2><span data-en="A quiet kind" data-ar="حِرفة هادئة">A quiet kind</span> <em class="italic" data-en="of craft." data-ar="من الإتقان.">of craft.</em></h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-reveal>
+        <p data-en="I'm a full-stack software engineer based in Cairo with three years spent building business systems — LMS platforms, multi-vendor e-commerce, and AI-powered apps."
+           data-ar="مهندس برمجيات Full-Stack من القاهرة، قضيتُ ثلاث سنوات في بناء أنظمة الأعمال — منصات التعلم، التجارة الإلكترونية متعددة البائعين، والتطبيقات المدعومة بالذكاء الاصطناعي.">
+          I'm a full-stack software engineer based in Cairo with three years spent building business systems.
+        </p>
+        <p data-en="I write Laravel and PHP for a living, and care most about the parts users never see: schema design, transactional integrity, queue jobs, and the empty states nobody asked for."
+           data-ar="أكتب Laravel و PHP يومياً، وأهتم أكثر بالتفاصيل التي لا يراها المستخدم: تصميم قواعد البيانات، سلامة المعاملات، المهام في الخلفية، وحالات الفراغ التي لا يطلبها أحد.">
+          I write Laravel and PHP for a living, and care most about the parts users never see.
+        </p>
+        <p data-en="Currently a full-time engineer at Hossam-X-Studios, with a part-time Laravel role at Hired HR. Open to long-format remote engagements."
+           data-ar="حالياً مهندس بدوام كامل في Hossam-X-Studios، مع دور Laravel بدوام جزئي في Hired HR. متاح لمشاريع عن بُعد طويلة الأمد.">
+          Currently full-time at Hossam-X-Studios, part-time Laravel at Hired HR.
+        </p>
+      </div>
+      <div class="about-side" data-reveal>
+        <div class="about-photo tilt">
+          <img src="uploads/img/portrait.png" alt="Amgad Emadeldin" loading="lazy" />
+        </div>
+        <div class="about-stats stagger">
+          <div class="about-stat">
+            <div class="k"><span class="counter" data-count="3">0</span><span style="color: var(--accent);">+</span></div>
+            <div class="v" data-en="Years shipping" data-ar="سنوات من العمل">Years shipping</div>
+          </div>
+          <div class="about-stat">
+            <div class="k"><span class="counter" data-count="6">0</span></div>
+            <div class="v" data-en="Production platforms" data-ar="منصات إنتاجية">Production platforms</div>
+          </div>
+          <div class="about-stat">
+            <div class="k"><span class="counter" data-count="2">0</span></div>
+            <div class="v" data-en="Active companies" data-ar="شركات حالية">Active companies</div>
+          </div>
+          <div class="about-stat">
+            <div class="k">3.44</div>
+            <div class="v" data-en="GPA · CS · AOU" data-ar="المعدل · علوم حاسب · AOU">GPA · CS · AOU</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section container">
+    <div class="section-head" data-reveal>
+      <div>
+        <div class="mono" style="color: var(--muted); font-size: 12px;">— 03</div>
+        <div class="eyebrow mt-2" data-en="Stack" data-ar="الأدوات">Stack</div>
+      </div>
+      <div>
+        <h2><span data-en="Tools I reach" data-ar="الأدوات التي أمدّ يدي إليها">Tools I reach</span> <em class="italic" data-en="for first." data-ar="أولاً.">for first.</em></h2>
+        <p class="lede" data-en="A practical kit, refined over three years on production systems. PHP and Laravel sit at the centre; the rest is whatever the problem actually needs."
+                       data-ar="مجموعة أدوات عملية صُقلت عبر ثلاث سنوات من العمل على أنظمة إنتاجية. Laravel و PHP في القلب، والباقي حسب ما يتطلبه المشروع.">A practical kit, refined over three years.</p>
+      </div>
+    </div>
+    <div class="stack stagger" data-reveal id="stackGrid"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="exp" class="section container">
+    <div class="section-head" data-reveal>
+      <div>
+        <div class="mono" style="color: var(--muted); font-size: 12px;">— 04</div>
+        <div class="eyebrow mt-2" data-en="Experience" data-ar="الخبرة">Experience</div>
+      </div>
+      <div>
+        <h2><span data-en="The long" data-ar="المسار">The long</span> <em class="italic" data-en="arc." data-ar="الطويل.">arc.</em></h2>
+      </div>
+    </div>
+    <div class="timeline" data-reveal id="timeline"></div>
+  </section>
+
+  <!-- MORE PROJECTS -->
+  <section class="section container" style="padding-top: 0;">
+    <div class="work-grid stagger" data-reveal id="moreProjects"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section container">
+    <div class="section-head" data-reveal>
+      <div>
+        <div class="mono" style="color: var(--muted); font-size: 12px;">— 05</div>
+        <div class="eyebrow mt-2" data-en="Words" data-ar="آراء">Words</div>
+      </div>
+      <div>
+        <h2><span data-en="From people" data-ar="من أناس">From people</span> <em class="italic" data-en="I've worked with." data-ar="عملتُ معهم.">I've worked with.</em></h2>
+        <p class="lede" data-en="Founders and operators of the platforms I shipped — on the parts that mattered most."
+                       data-ar="آراء مؤسسي وأصحاب المنصات اللي بنيتها — عن التفاصيل اللي فرقت معاهم فعلاً.">Founders and operators of the platforms I shipped.</p>
+      </div>
+    </div>
+    <div class="tests stagger" data-reveal id="testimonials"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container" style="padding-bottom: 24px;">
+    <div class="contact" data-reveal>
+      <div class="contact-inner">
+        <div class="eyebrow" data-en="— 06 · Contact" data-ar="— 06 · تواصل">— 06 · Contact</div>
+        <h2>
+          <span data-en="Let's build something" data-ar="لنبنِ شيئاً">Let's build something</span>
+          <em class="italic" data-en="worth keeping." data-ar="يستحق البقاء.">worth keeping.</em>
+        </h2>
+        <div class="contact-actions">
+          <a class="contact-cta" href="mailto:amgademad447@gmail.com" data-cursor-label="Copy email">
+            amgademad447@gmail.com<span class="arrow">→</span>
+          </a>
+          <a class="btn-pill btn-whatsapp magnetic" id="waMain" href="#" data-cursor-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.2-.3-.5.3-.4.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.2 1.8.7 2.5.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 .8C5.8.8.8 5.8.8 12c0 2 .5 3.9 1.5 5.6L.8 23.2l5.7-1.5c1.6.9 3.5 1.4 5.4 1.4 6.2 0 11.2-5 11.2-11.2C23.2 5.8 18.2.8 12 .8zm0 20.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8c0 5.5-4.4 9.9-9.8 9.9z"/></svg>
+            <span data-en="Message on WhatsApp" data-ar="راسلني على واتساب">Message on WhatsApp</span><span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h4 data-en="Engineer" data-ar="المهندس">Engineer</h4>
+            <div class="contact-mark"><em data-en="Amgad" data-ar="أمجد">Amgad</em></div>
+            <p style="color: color-mix(in oklab, var(--bg) 60%, transparent); font-size: 13px; margin-top: 16px; max-width: 32ch;"
+               data-en="Full-stack software engineer based in Cairo. Open to remote and long-format engagements."
+               data-ar="مهندس برمجيات Full-Stack من القاهرة. متاح للعمل عن بُعد والمشاريع طويلة الأمد.">
+              Full-stack software engineer based in Cairo.
+            </p>
+          </div>
+          <div>
+            <h4 data-en="Elsewhere" data-ar="منصات أخرى">Elsewhere</h4>
+            <ul>
+              <li><a href="https://github.com/Amgad-Emad/" target="_blank" rel="noopener">GitHub ↗</a></li>
+              <li><a href="https://www.linkedin.com/in/amgad-emadeldin-78880619a/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-en="Direct" data-ar="تواصل مباشر">Direct</h4>
+            <ul>
+              <li><a href="mailto:amgademad447@gmail.com">amgademad447@gmail.com</a></li>
+              <li><a href="tel:+201202495945">+20 120 249 5945</a></li>
+              <li><a href="#" class="wa-link" id="waInline" data-en="WhatsApp ↗" data-ar="واتساب ↗">WhatsApp ↗</a></li>
+              <li><a href="uploads/Amgad_Emadeldin_Laravel_Developer.pdf" download data-en="Download CV ↗" data-ar="تحميل السيرة ↗">Download CV ↗</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-en="Available" data-ar="التوفر">Available</h4>
+            <ul>
+              <li data-en="Available from anywhere" data-ar="متاح من أي مكان">Available from anywhere</li>
+              <li data-en="Remote · On-site · Traveling" data-ar="عن بُعد · في الموقع · سفر">Remote · On-site · Traveling</li>
+              <li data-en="Full-time · Part-time · Freelance" data-ar="دوام كامل · دوام جزئي · فريلانس">Full-time · Part-time · Freelance</li>
+              <li>EN · AR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <span data-en="© 2026 Amgad Emadeldin" data-ar="© 2026 أمجد عماد الدين">© 2026 Amgad Emadeldin</span>
+      <span class="now" data-en="Cairo · Building since 2022" data-ar="القاهرة · أبني منذ 2022">Cairo · Building since 2022</span>
+      <span data-en="Designed & built by Amgad" data-ar="تصميم وبناء أمجد">Designed &amp; built by Amgad</span>
+    </div>
+  </section>
+
+  <!-- WhatsApp float -->
+  <a href="#" class="wa-float wa-link" id="waFloat" data-cursor-label="WhatsApp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.2-.3-.5.3-.4.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.2 1.8.7 2.5.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 .8C5.8.8.8 5.8.8 12c0 2 .5 3.9 1.5 5.6L.8 23.2l5.7-1.5c1.6.9 3.5 1.4 5.4 1.4 6.2 0 11.2-5 11.2-11.2C23.2 5.8 18.2.8 12 .8zm0 20.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8c0 5.5-4.4 9.9-9.8 9.9z"/></svg>
+  </a>
+
+  <!-- Tweaks trigger -->
+  <button class="tweak-trigger" id="tweakTrigger" data-cursor-label="Tweaks" aria-label="Tweaks">⚙</button>
+
+  <!-- Tweaks panel -->
+  <div class="tweaks" id="tweaks">
+    <div class="tweaks-hd">
+      <b data-en="Tweaks" data-ar="إعدادات">Tweaks</b>
+      <button class="tweaks-x" id="tweaksX">×</button>
+    </div>
+    <div class="tweaks-body">
+      <div class="tweak-row">
+        <span class="tweak-sect" data-en="Theme" data-ar="النمط">Theme</span>
+        <div class="tweak-seg" data-tweak="theme">
+          <span class="thumb" id="themeThumb"></span>
+          <button data-val="cream" class="on" data-en="Cream" data-ar="كريمي">Cream</button>
+          <button data-val="slate" data-en="Slate" data-ar="رمادي">Slate</button>
+          <button data-val="midnight" data-en="Midnight" data-ar="ليلي">Midnight</button>
+        </div>
+      </div>
+      <div class="tweak-row">
+        <span class="tweak-sect" data-en="Accent" data-ar="اللون المميز">Accent</span>
+        <div class="swatches" id="swatches">
+          <button class="swatch on" data-val="#C25A33" style="background:#C25A33"></button>
+          <button class="swatch" data-val="#3F6AB8" style="background:#3F6AB8"></button>
+          <button class="swatch" data-val="#2E7D5F" style="background:#2E7D5F"></button>
+          <button class="swatch" data-val="#8B4D9E" style="background:#8B4D9E"></button>
+          <button class="swatch" data-val="#B89243" style="background:#B89243"></button>
+        </div>
+      </div>
+      <div class="tweak-row">
+        <span class="tweak-sect" data-en="Animations" data-ar="الحركات">Animations</span>
+        <div class="tweak-seg" data-tweak="motion">
+          <span class="thumb" id="motionThumb"></span>
+          <button data-val="rich" class="on" data-en="Rich" data-ar="غنية">Rich</button>
+          <button data-val="reduced" data-en="Reduced" data-ar="مخففة">Reduced</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tweak defaults block -->
+  <script>
+    window.__TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme": "cream",
+      "accent": "#C25A33",
+      "motion": "rich",
+      "lang": "en"
+    }/*EDITMODE-END*/;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

@@ -28,10 +28,13 @@ const WORK = [
 ];
 
 const MORE = [
-  { t_en: "Holistic Path", t_ar: "Holistic Path", r_en: "Global Software House · AI · Chatbots", r_ar: "شركة برمجيات عالمية · ذكاء اصطناعي · شات بوت", y: "2025", tag_en: "Agency", tag_ar: "وكالة", mark: "H", url: "#", img: "uploads/img/holisticpath.png",
-    p_en: "Brand + platform build for a global multi-service software house — software development, UI/UX, web and mobile, e-commerce, ERP/CRM/LMS/ATS/HRMS, plus an AI services line covering chatbots and automation. Service showcase, case studies and a global lead-capture CRM.",
-    p_ar: "بناء براند ومنصة لشركة برمجيات عالمية متعددة الخدمات — تطوير برمجيات، UI/UX، ويب وموبايل، إي-كومرس، ERP/CRM/LMS/ATS/HRMS، بالإضافة لخط خدمات ذكاء اصطناعي يشمل الشات بوتس والأتمتة. عرض خدمات، دراسات حالة، ونظام CRM لاستقبال العملاء حول العالم." },
-  { t_en: "Brain Tech", t_ar: "Brain Tech", r_en: "Egypt Software House · Web · Mobile · ERP", r_ar: "شركة برمجيات مصرية · ويب · موبايل · ERP", y: "2025", tag_en: "Agency", tag_ar: "وكالة", mark: "B", url: "#", img: "uploads/img/braintech.png",
+  { t_en: "Construction QMS", t_ar: "Construction QMS", r_en: "Quality Management · Audits · NCR · Handover", r_ar: "إدارة جودة · تدقيق · NCR · تسليم", y: "2026", tag_en: "Enterprise", tag_ar: "مؤسسي", mark: "Q", img: "uploads/img/qms.png", fit: "contain",
+    p_en: "Bilingual (EN/AR) Quality Management System for a construction company — weighted monthly quality audits with scoring and PDF reports, a unified NCR/defects register, section-partitioned handover registers with inspections and full revision history, lessons-learned library, customer feedback, subcontractor appraisal, and role-based multi-business-unit administration.",
+    p_ar: "نظام إدارة جودة ثنائي اللغة (عربي/إنجليزي) لشركة مقاولات — تدقيقات جودة شهرية موزونة بنظام تقييم وتقارير PDF، سجل موحد لحالات عدم المطابقة والعيوب، سجلات تسليم مقسمة بالأقسام مع معاينات وتاريخ مراجعات كامل، مكتبة دروس مستفادة، آراء العملاء، تقييم مقاولي الباطن، وإدارة متعددة الوحدات بصلاحيات أدوار." },
+  { t_en: "Ellaithy Automotive", t_ar: "Ellaithy Automotive", r_en: "Automotive Marketplace · E-Commerce · Financing", r_ar: "سوق سيارات · تجارة إلكترونية · تمويل", y: "2025", tag_en: "E-Commerce", tag_ar: "تجارة", mark: "E", url: "https://ellaithy.brain-tech.net/", img: "uploads/img/ellaithy.png",
+    p_en: "Online automotive marketplace for a Cairo car dealership — new and certified pre-owned vehicles across economy, luxury, hybrid and electric, online financing with instant approval and flexible installment plans, free trade-in valuations, home delivery, and inventory from seven showrooms across Greater Cairo.",
+    p_ar: "سوق سيارات إلكتروني لمعرض سيارات في القاهرة — سيارات جديدة ومستعملة معتمدة تشمل الاقتصادية والفاخرة والهايبرد والكهربائية، تمويل أونلاين بموافقة فورية وخطط تقسيط مرنة، تقييم مجاني للاستبدال، توصيل حتى الباب، ومخزون من سبعة معارض في القاهرة الكبرى." },
+  { t_en: "Brain Tech", t_ar: "Brain Tech", r_en: "Egypt Software House · Web · Mobile · ERP", r_ar: "شركة برمجيات مصرية · ويب · موبايل · ERP", y: "2025", tag_en: "Agency", tag_ar: "وكالة", mark: "B", url: "https://brain-tech.net/", img: "uploads/img/braintech.png",
     p_en: "End-to-end agency platform for an Egyptian software house — software development, UI/UX, web, mobile, e-commerce, branding, media buying, SEO and full systems work (ERP, CRM, LMS, ATS, HRMS). Service catalogue, portfolio and an inquiries CRM for local clients.",
     p_ar: "منصة وكالة متكاملة لشركة برمجيات مصرية — تطوير برمجيات، UI/UX، ويب، موبايل، إي-كومرس، براندينج، ميديا باينج، SEO، وخدمات أنظمة كاملة (ERP، CRM، LMS، ATS، HRMS). كتالوج خدمات، Portfolio، ونظام CRM لاستقبال استفسارات العملاء داخل مصر." },
   { t_en: "Gala Global", t_ar: "Gala Global", r_en: "Branding Agency · CMS · CRM", r_ar: "وكالة براندينج · CMS · CRM", y: "2024", tag_en: "CMS", tag_ar: "CMS", mark: "G", url: "https://galaglobal.co", img: "uploads/img/galaglobal.png",
@@ -58,11 +61,15 @@ const STACK = [
 ];
 
 const TIMELINE = [
-  { y_en: "2024 — now", y_ar: "2024 — الآن", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
-    co_en: "Hossam-X-Studios · Sheraton, Cairo · Full-time", co_ar: "Hossam-X-Studios · شيراتون، القاهرة · دوام كامل",
-    d_en: "Shipping production-level systems: ExCraft, XS Lawyer (AI), Blndd LMS, HIRED HR, Holistic Path, Brain Tech, Gala Global and Biry Suits. Own backend architecture, database design, API development, system integration, secure auth and payment integrations.",
-    d_ar: "أشحن أنظمة إنتاجية: ExCraft، XS Lawyer (ذكاء اصطناعي)، Blndd LMS، HIRED HR، Holistic Path، Brain Tech، Gala Global، وBiry Suits. أمتلك معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، المصادقة الآمنة، ودمج بوابات الدفع.",
+  { y_en: "May 2026 — now", y_ar: "مايو 2026 — الآن", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
+    co_en: "Green Codes · Full-time", co_ar: "Green Codes · دوام كامل",
+    d_en: "Building and shipping full-stack web platforms — backend architecture, database design, API development, system integration and production deployment.",
+    d_ar: "أبني وأشحن منصات ويب متكاملة — معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، والنشر الإنتاجي.",
     now: true },
+  { y_en: "2024 — May 2026", y_ar: "2024 — مايو 2026", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
+    co_en: "Hossam-X-Studios · Sheraton, Cairo · Full-time", co_ar: "Hossam-X-Studios · شيراتون، القاهرة · دوام كامل",
+    d_en: "Shipped production-level systems: ExCraft, XS Lawyer (AI), Blndd LMS, HIRED HR, Ellaithy Automotive, Brain Tech, Gala Global and Biry Suits. Owned backend architecture, database design, API development, system integration, secure auth and payment integrations.",
+    d_ar: "شحنت أنظمة إنتاجية: ExCraft، XS Lawyer (ذكاء اصطناعي)، Blndd LMS، HIRED HR، Ellaithy Automotive، Brain Tech، Gala Global، وBiry Suits. امتلكت معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، المصادقة الآمنة، ودمج بوابات الدفع." },
   { y_en: "2025 — 2026", y_ar: "2025 — 2026", t_en: "Software Engineer · Backend / Laravel", t_ar: "مهندس برمجيات · Backend / Laravel",
     co_en: "Hired HR · Maadi, Cairo · Part-time", co_ar: "Hired HR · المعادي، القاهرة · دوام جزئي",
     d_en: "Built LMS features for a corporate-training product: course management, progress tracking, certificate generation, and subscription plans. Integrated CDN video delivery and optimized backend performance.",
@@ -104,7 +111,7 @@ function renderWork(target, items) {
   root.innerHTML = items.map(x => {
     const hasUrl = x.url && x.url !== "#";
     const visual = x.img
-      ? `<img class="thumb-img" src="${frontAsset(x.img)}" alt="${x.t_en}" loading="lazy" />`
+      ? `<img class="thumb-img${x.fit === "contain" ? " thumb-img--contain" : ""}" src="${frontAsset(x.img)}" alt="${x.t_en}" loading="lazy" />`
       : `<div class="thumb-mark">${x.mark}</div>`;
     return `
     <a class="work-card tilt" href="${x.url || '#'}" ${hasUrl ? 'target="_blank" rel="noopener"' : ''} data-cursor-label="${hasUrl ? 'Visit live site' : 'View case'}">

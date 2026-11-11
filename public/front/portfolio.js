@@ -13,64 +13,68 @@ function frontAsset(path) {
 
 /* --------- DATA --------- */
 const WORK = [
-  { t_en: "ExCraft", t_ar: "ExCraft", r_en: "Export · LMS · Consultation · 40+ Modules", r_ar: "تصدير · تعلم · استشارات · 40+ وحدة", y: "2024", tag_en: "Featured", tag_ar: "مميز", mark: "E", url: "https://excraft.co", img: "uploads/img/excraft.png",
+  { t_en: "ExCraft", t_ar: "ExCraft", r_en: "Export · LMS · Consultation · 40+ Modules", r_ar: "تصدير · تعلم · استشارات · 40+ وحدة", y: "2023", tag_en: "Featured", tag_ar: "مميز", mark: "E", url: "https://excraft.co", img: "uploads/img/excraft.png",
     p_en: "Unified Export, Import, Consultation and Academy for Egypt's leading FMCG exporter — one Laravel codebase, 40+ admin modules, public website, CRM and LMS. Built for Egypt and East Africa.",
     p_ar: "توحيد التصدير والاستيراد والاستشارات والأكاديمية لأكبر مصدّر FMCG في مصر — قاعدة كود Laravel واحدة، أكثر من 40 وحدة إدارية، موقع عام، CRM ونظام تعلم. مبني لمصر وشرق أفريقيا." },
-  { t_en: "XS Lawyer", t_ar: "XS Lawyer", r_en: "Legal Tech · AI · SaaS · RAG", r_ar: "قانون · ذكاء اصطناعي · SaaS · RAG", y: "2025", tag_en: "AI", tag_ar: "ذكاء", mark: "X", url: "https://xs-lawyer.com", img: "uploads/img/xslawyer.png",
+  { t_en: "XS Lawyer", t_ar: "XS Lawyer", r_en: "Legal Tech · AI · SaaS · RAG", r_ar: "قانون · ذكاء اصطناعي · SaaS · RAG", y: "2024", tag_en: "AI", tag_ar: "ذكاء", mark: "X", url: "https://xs-lawyer.com", img: "uploads/img/xslawyer.png",
     p_en: "AI-powered SaaS for Egyptian legal consultation — chatbot, document analysis, subscription billing and a full admin OS. RAG with embeddings and vector search over local legal corpora.",
     p_ar: "منصة SaaS مدعومة بالذكاء الاصطناعي للاستشارات القانونية المصرية — شات بوت، تحليل مستندات، فوترة اشتراكات، ونظام إدارة كامل. تقنية RAG بالـ Embeddings وبحث متجهي على المراجع القانونية المحلية." },
-  { t_en: "Blndd", t_ar: "Blndd", r_en: "B2B LMS · TNA · Subscriptions", r_ar: "LMS للأعمال · تحليل الاحتياج · اشتراكات", y: "2025", tag_en: "LMS", tag_ar: "LMS", mark: "B", url: "https://blndd.net", img: "uploads/img/blndd.png",
+  { t_en: "Blndd", t_ar: "Blndd", r_en: "B2B LMS · TNA · Subscriptions", r_ar: "LMS للأعمال · تحليل الاحتياج · اشتراكات", y: "2024", tag_en: "LMS", tag_ar: "LMS", mark: "B", url: "https://blndd.net", img: "uploads/img/blndd.png",
     p_en: "Full-stack B2B SaaS LMS running the entire corporate-training lifecycle — Training Needs Analysis, online + in-class + blended courses, integrated CRM, subscription billing, and a 13-module multi-role admin OS.",
     p_ar: "نظام LMS احترافي لتدريب الشركات — من تحليل الاحتياج التدريبي إلى الشهادة، دورات أونلاين/حضوري/مدمجة، CRM متكامل، فوترة اشتراكات، ولوحة إدارة من 13 وحدة بأدوار متعددة." },
-  { t_en: "HIRED HR", t_ar: "HIRED HR", r_en: "CRM · ATS · HRMS · Accounting", r_ar: "CRM · ATS · HRMS · محاسبة", y: "2025", tag_en: "Suite", tag_ar: "حزمة", mark: "H", url: "https://portal.hiredhr.net", img: "uploads/img/hiredhr.png",
+  { t_en: "HIRED HR", t_ar: "HIRED HR", r_en: "CRM · ATS · HRMS · Accounting", r_ar: "CRM · ATS · HRMS · محاسبة", y: "2024", tag_en: "Suite", tag_ar: "حزمة", mark: "H", url: "https://portal.hiredhr.net", img: "uploads/img/hiredhr.png",
     p_en: "Integrated multi-domain operations portal for a staffing & HR-tech company — CRM, ATS, HRMS, project management, performance and finance in one role-based admin. Replaces five separate SaaS tools.",
     p_ar: "بوابة عمليات متعددة المجالات لشركة توظيف وHR-Tech — CRM، ATS، HRMS، إدارة مشاريع، أداء، ومحاسبة في إدارة واحدة بصلاحيات. استبدلت خمس أدوات SaaS منفصلة." }
 ];
 
 const MORE = [
-  { t_en: "Construction QMS", t_ar: "Construction QMS", r_en: "Quality Management · Audits · NCR · Handover", r_ar: "إدارة جودة · تدقيق · NCR · تسليم", y: "2026", tag_en: "Enterprise", tag_ar: "مؤسسي", mark: "Q", img: "uploads/img/qms.png", fit: "contain",
+  { t_en: "Construction QMS", t_ar: "Construction QMS", r_en: "Quality Management · Audits · NCR · Handover", r_ar: "إدارة جودة · تدقيق · NCR · تسليم", y: "2025", tag_en: "Enterprise", tag_ar: "مؤسسي", mark: "Q", img: "uploads/img/qms.png", fit: "contain",
     p_en: "Bilingual (EN/AR) Quality Management System for a construction company — weighted monthly quality audits with scoring and PDF reports, a unified NCR/defects register, section-partitioned handover registers with inspections and full revision history, lessons-learned library, customer feedback, subcontractor appraisal, and role-based multi-business-unit administration.",
     p_ar: "نظام إدارة جودة ثنائي اللغة (عربي/إنجليزي) لشركة مقاولات — تدقيقات جودة شهرية موزونة بنظام تقييم وتقارير PDF، سجل موحد لحالات عدم المطابقة والعيوب، سجلات تسليم مقسمة بالأقسام مع معاينات وتاريخ مراجعات كامل، مكتبة دروس مستفادة، آراء العملاء، تقييم مقاولي الباطن، وإدارة متعددة الوحدات بصلاحيات أدوار." },
-  { t_en: "Ellaithy Automotive", t_ar: "Ellaithy Automotive", r_en: "Automotive Marketplace · E-Commerce · Financing", r_ar: "سوق سيارات · تجارة إلكترونية · تمويل", y: "2025", tag_en: "E-Commerce", tag_ar: "تجارة", mark: "E", url: "https://ellaithy.brain-tech.net/", img: "uploads/img/ellaithy.png",
+  { t_en: "Ellaithy Automotive", t_ar: "Ellaithy Automotive", r_en: "Automotive Marketplace · E-Commerce · Financing", r_ar: "سوق سيارات · تجارة إلكترونية · تمويل", y: "2024", tag_en: "E-Commerce", tag_ar: "تجارة", mark: "E", url: "https://ellaithy.brain-tech.net/", img: "uploads/img/ellaithy.png",
     p_en: "Online automotive marketplace for a Cairo car dealership — new and certified pre-owned vehicles across economy, luxury, hybrid and electric, online financing with instant approval and flexible installment plans, free trade-in valuations, home delivery, and inventory from seven showrooms across Greater Cairo.",
     p_ar: "سوق سيارات إلكتروني لمعرض سيارات في القاهرة — سيارات جديدة ومستعملة معتمدة تشمل الاقتصادية والفاخرة والهايبرد والكهربائية، تمويل أونلاين بموافقة فورية وخطط تقسيط مرنة، تقييم مجاني للاستبدال، توصيل حتى الباب، ومخزون من سبعة معارض في القاهرة الكبرى." },
-  { t_en: "Brain Tech", t_ar: "Brain Tech", r_en: "Egypt Software House · Web · Mobile · ERP", r_ar: "شركة برمجيات مصرية · ويب · موبايل · ERP", y: "2025", tag_en: "Agency", tag_ar: "وكالة", mark: "B", url: "https://brain-tech.net/", img: "uploads/img/braintech.png",
+  { t_en: "Brain Tech", t_ar: "Brain Tech", r_en: "Egypt Software House · Web · Mobile · ERP", r_ar: "شركة برمجيات مصرية · ويب · موبايل · ERP", y: "2024", tag_en: "Agency", tag_ar: "وكالة", mark: "B", url: "https://brain-tech.net/", img: "uploads/img/braintech.png",
     p_en: "End-to-end agency platform for an Egyptian software house — software development, UI/UX, web, mobile, e-commerce, branding, media buying, SEO and full systems work (ERP, CRM, LMS, ATS, HRMS). Service catalogue, portfolio and an inquiries CRM for local clients.",
     p_ar: "منصة وكالة متكاملة لشركة برمجيات مصرية — تطوير برمجيات، UI/UX، ويب، موبايل، إي-كومرس، براندينج، ميديا باينج، SEO، وخدمات أنظمة كاملة (ERP، CRM، LMS، ATS، HRMS). كتالوج خدمات، Portfolio، ونظام CRM لاستقبال استفسارات العملاء داخل مصر." },
-  { t_en: "Gala Global", t_ar: "Gala Global", r_en: "Branding Agency · CMS · CRM", r_ar: "وكالة براندينج · CMS · CRM", y: "2024", tag_en: "CMS", tag_ar: "CMS", mark: "G", url: "https://galaglobal.co", img: "uploads/img/galaglobal.png",
+  { t_en: "Gala Global", t_ar: "Gala Global", r_en: "Branding Agency · CMS · CRM", r_ar: "وكالة براندينج · CMS · CRM", y: "2023", tag_en: "CMS", tag_ar: "CMS", mark: "G", url: "https://galaglobal.co", img: "uploads/img/galaglobal.png",
     p_en: "Brand platform for a full-service creative agency — case-study-led storytelling, custom CMS over every page element, and a CRM pipeline for sales follow-through.",
     p_ar: "منصة براند لوكالة إبداعية كاملة الخدمات — حكاية مبنية على دراسات الحالة، CMS مخصص لكل عنصر في الصفحة، وقمع CRM للمتابعة البيعية." },
-  { t_en: "Biry Suits", t_ar: "Biry Suits", r_en: "Bespoke Tailoring · Website · Admin OS", r_ar: "تفصيل بدلات · موقع · لوحة إدارة", y: "2024", tag_en: "Brand", tag_ar: "براند", mark: "B", url: "https://www.birysuits.com/en", img: "uploads/img/birysuites.png",
+  { t_en: "Biry Suits", t_ar: "Biry Suits", r_en: "Bespoke Tailoring · Website · Admin OS", r_ar: "تفصيل بدلات · موقع · لوحة إدارة", y: "2023", tag_en: "Brand", tag_ar: "براند", mark: "B", url: "https://www.birysuits.com/en", img: "uploads/img/birysuites.png",
     p_en: "Bespoke digital experience for an Egyptian tailoring house (est. 2012) — brand identity, product showcase site, and an admin OS to run orders and operations end-to-end.",
     p_ar: "تجربة رقمية مخصصة لدار تفصيل مصرية (تأسست 2012) — هوية بصرية، موقع عرض منتجات، ولوحة إدارة لتشغيل الطلبات والعمليات من البداية للنهاية." }
 ];
 
 const STACK = [
-  { g: "La", n: "Laravel", c_en: "Framework", c_ar: "إطار عمل", y: "3y" },
-  { g: "Ph", n: "PHP", c_en: "Language", c_ar: "لغة", y: "3y" },
-  { g: "My", n: "MySQL", c_en: "Database", c_ar: "قاعدة بيانات", y: "3y" },
-  { g: "Ap", n: "REST APIs", c_en: "JWT · OAuth", c_ar: "JWT · OAuth", y: "3y" },
-  { g: "Bl", n: "Blade", c_en: "Templating", c_ar: "قوالب", y: "3y" },
-  { g: "Tw", n: "Tailwind · Bootstrap", c_en: "Styling", c_ar: "تنسيق", y: "3y" },
-  { g: "Js", n: "JavaScript · AJAX", c_en: "Client", c_ar: "واجهة العميل", y: "3y" },
+  { g: "La", n: "Laravel", c_en: "Framework", c_ar: "إطار عمل", y: "4y" },
+  { g: "Ph", n: "PHP", c_en: "Language", c_ar: "لغة", y: "4y" },
+  { g: "My", n: "MySQL", c_en: "Database", c_ar: "قاعدة بيانات", y: "4y" },
+  { g: "Ap", n: "REST APIs", c_en: "JWT · OAuth", c_ar: "JWT · OAuth", y: "4y" },
+  { g: "Bl", n: "Blade", c_en: "Templating", c_ar: "قوالب", y: "4y" },
+  { g: "Tw", n: "Tailwind · Bootstrap", c_en: "Styling", c_ar: "تنسيق", y: "4y" },
+  { g: "Js", n: "JavaScript · AJAX", c_en: "Client", c_ar: "واجهة العميل", y: "4y" },
   { g: "Ai", n: "OpenAI · RAG", c_en: "AI integration", c_ar: "تكامل الذكاء", y: "1y" },
-  { g: "Gh", n: "Git · GitHub", c_en: "Versioning", c_ar: "إدارة النسخ", y: "3y" },
-  { g: "cP", n: "cPanel · Deploy", c_en: "DevOps", c_ar: "نشر", y: "3y" },
+  { g: "Gh", n: "Git · GitHub", c_en: "Versioning", c_ar: "إدارة النسخ", y: "4y" },
+  { g: "cP", n: "cPanel · Deploy", c_en: "DevOps", c_ar: "نشر", y: "4y" },
   { g: "Qj", n: "Queue Jobs", c_en: "Background work", c_ar: "مهام خلفية", y: "2y" },
-  { g: "Xm", n: "XMind", c_en: "System design", c_ar: "تصميم أنظمة", y: "3y" }
+  { g: "Xm", n: "XMind", c_en: "System design", c_ar: "تصميم أنظمة", y: "4y" }
 ];
 
 const TIMELINE = [
-  { y_en: "May 2026 — now", y_ar: "مايو 2026 — الآن", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
-    co_en: "Green Codes · Full-time", co_ar: "Green Codes · دوام كامل",
-    d_en: "Building and shipping full-stack web platforms — backend architecture, database design, API development, system integration and production deployment.",
-    d_ar: "أبني وأشحن منصات ويب متكاملة — معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، والنشر الإنتاجي.",
+  { y_en: "Aug 2026 — now", y_ar: "أغسطس 2026 — الآن", t_en: "Senior Backend Engineer", t_ar: "مهندس Backend سينيور",
+    co_en: "Inisev · Multinational · Full-time", co_ar: "Inisev · شركة متعددة الجنسيات · دوام كامل",
+    d_en: "Leading backend engineering for a multinational software company — system architecture, API development, database performance and production delivery at scale.",
+    d_ar: "أقود هندسة الخلفية لشركة برمجيات متعددة الجنسيات — معمارية الأنظمة، تطوير الـ APIs، أداء قواعد البيانات، والتسليم الإنتاجي على نطاق واسع.",
     now: true },
-  { y_en: "2024 — May 2026", y_ar: "2024 — مايو 2026", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
+  { y_en: "May 2025 — Jul 2026", y_ar: "مايو 2025 — يوليو 2026", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
+    co_en: "Green Codes · Full-time", co_ar: "Green Codes · دوام كامل",
+    d_en: "Built and shipped full-stack web platforms — backend architecture, database design, API development, system integration and production deployment.",
+    d_ar: "بنيت وشحنت منصات ويب متكاملة — معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، والنشر الإنتاجي." },
+  { y_en: "2023 — May 2025", y_ar: "2023 — مايو 2025", t_en: "Full-Stack Engineer", t_ar: "مهندس Full-Stack",
     co_en: "Hossam-X-Studios · Sheraton, Cairo · Full-time", co_ar: "Hossam-X-Studios · شيراتون، القاهرة · دوام كامل",
     d_en: "Shipped production-level systems: ExCraft, XS Lawyer (AI), Blndd LMS, HIRED HR, Ellaithy Automotive, Brain Tech, Gala Global and Biry Suits. Owned backend architecture, database design, API development, system integration, secure auth and payment integrations.",
     d_ar: "شحنت أنظمة إنتاجية: ExCraft، XS Lawyer (ذكاء اصطناعي)، Blndd LMS، HIRED HR، Ellaithy Automotive، Brain Tech، Gala Global، وBiry Suits. امتلكت معمارية الخلفية، تصميم قواعد البيانات، تطوير الـ APIs، تكامل الأنظمة، المصادقة الآمنة، ودمج بوابات الدفع." },
-  { y_en: "2025 — 2026", y_ar: "2025 — 2026", t_en: "Software Engineer · Backend / Laravel", t_ar: "مهندس برمجيات · Backend / Laravel",
+  { y_en: "2024 — 2025", y_ar: "2024 — 2025", t_en: "Software Engineer · Backend / Laravel", t_ar: "مهندس برمجيات · Backend / Laravel",
     co_en: "Hired HR · Maadi, Cairo · Part-time", co_ar: "Hired HR · المعادي، القاهرة · دوام جزئي",
     d_en: "Built LMS features for a corporate-training product: course management, progress tracking, certificate generation, and subscription plans. Integrated CDN video delivery and optimized backend performance.",
     d_ar: "بنيت مزايا LMS لمنتج تدريب مؤسسي: إدارة الدورات، تتبع التقدم، إصدار الشهادات، وخطط الاشتراك. دمجت توصيل الفيديو عبر CDN وحسّنت أداء الخلفية." },
@@ -99,8 +103,8 @@ const TESTIMONIALS = [
 ];
 
 const MARQUEE_ITEMS = {
-  en: ["Full-Stack Engineer", "Laravel · PHP · MySQL", "Cairo / Remote", "Building since 2022", "AI-Powered Systems", "Available Q3 2026"],
-  ar: ["مهندس Full-Stack", "Laravel · PHP · MySQL", "القاهرة / عن بُعد", "أبني منذ 2022", "أنظمة مدعومة بالذكاء", "متاح الربع الثالث 2026"]
+  en: ["Senior Backend Engineer", "Laravel · PHP · MySQL", "Cairo / Remote", "Building since 2022", "AI-Powered Systems", "Open to remote work"],
+  ar: ["مهندس Backend سينيور", "Laravel · PHP · MySQL", "القاهرة / عن بُعد", "أبني منذ 2022", "أنظمة مدعومة بالذكاء", "متاح للعمل عن بُعد"]
 };
 
 /* --------- RENDER --------- */

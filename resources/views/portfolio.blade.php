@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-en="Amgad Emadeldin — Full-Stack Engineer" data-ar="أمجد عماد الدين — مهندس برمجيات">Amgad Emadeldin — Full-Stack Engineer</title>
+  <title data-en="Amgad Emadeldin — Senior Backend Engineer" data-ar="أمجد عماد الدين — مهندس برمجيات">Amgad Emadeldin — Senior Backend Engineer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2BzRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ asset('front/portfolio.css') }}" />
+  <link rel="stylesheet" href="{{ asset('front/portfolio.css') }}?v={{ filemtime(public_path('front/portfolio.css')) }}" />
 </head>
 <body>
 
@@ -100,8 +100,8 @@
       </div>
       <div>
         <h2><span data-en="Things I shipped" data-ar="مشاريع تم تسليمها">Things I shipped</span> <em class="italic" data-en="recently." data-ar="مؤخراً.">recently.</em></h2>
-        <p class="lede" data-en="A short list of production-grade platforms shipped over the past three years. Each one taught me something new about scale, schemas, or the seam between back and front."
-                       data-ar="قائمة قصيرة من المنصات الإنتاجية التي تم تسليمها خلال السنوات الثلاث الماضية. كل واحدة منها علّمتني شيئاً جديداً عن التوسع أو هيكلة البيانات أو الربط بين الواجهة والخلفية.">A short list of production-grade platforms shipped over the past three years.</p>
+        <p class="lede" data-en="A short list of production-grade platforms shipped over the past four years. Each one taught me something new about scale, schemas, or the seam between back and front."
+                       data-ar="قائمة قصيرة من المنصات الإنتاجية التي تم تسليمها خلال السنوات الأربع الماضية. كل واحدة منها علّمتني شيئاً جديداً عن التوسع أو هيكلة البيانات أو الربط بين الواجهة والخلفية.">A short list of production-grade platforms shipped over the past four years.</p>
       </div>
     </div>
     <div class="work-grid stagger" data-reveal id="workGrid"></div>
@@ -156,17 +156,17 @@
     </div>
     <div class="about-grid">
       <div class="about-text" data-reveal>
-        <p data-en="I'm a full-stack software engineer based in Cairo with three years spent building business systems — LMS platforms, multi-vendor e-commerce, and AI-powered apps."
-           data-ar="مهندس برمجيات Full-Stack من القاهرة، قضيتُ ثلاث سنوات في بناء أنظمة الأعمال — منصات التعلم، التجارة الإلكترونية متعددة البائعين، والتطبيقات المدعومة بالذكاء الاصطناعي.">
-          I'm a full-stack software engineer based in Cairo with three years spent building business systems.
+        <p data-en="I'm a senior backend engineer based in Cairo with four-plus years spent building business systems — LMS platforms, multi-vendor e-commerce, and AI-powered apps."
+           data-ar="مهندس Backend سينيور من القاهرة، قضيتُ أكثر من أربع سنوات في بناء أنظمة الأعمال — منصات التعلم، التجارة الإلكترونية متعددة البائعين، والتطبيقات المدعومة بالذكاء الاصطناعي.">
+          I'm a senior backend engineer based in Cairo with four-plus years spent building business systems.
         </p>
         <p data-en="I write Laravel and PHP for a living, and care most about the parts users never see: schema design, transactional integrity, queue jobs, and the empty states nobody asked for."
            data-ar="أكتب Laravel و PHP يومياً، وأهتم أكثر بالتفاصيل التي لا يراها المستخدم: تصميم قواعد البيانات، سلامة المعاملات، المهام في الخلفية، وحالات الفراغ التي لا يطلبها أحد.">
           I write Laravel and PHP for a living, and care most about the parts users never see.
         </p>
-        <p data-en="Currently a full-time Full-Stack Engineer at Green Codes. Open to long-format remote engagements."
-           data-ar="حالياً مهندس Full-Stack بدوام كامل في Green Codes. متاح لمشاريع عن بُعد طويلة الأمد.">
-          Currently a full-time Full-Stack Engineer at Green Codes.
+        <p data-en="Currently a full-time Senior Backend Engineer at Inisev, a multinational software company, previously at Green Codes. Open to long-format remote engagements."
+           data-ar="حالياً مهندس Backend سينيور بدوام كامل في Inisev، شركة برمجيات متعددة الجنسيات، وسابقاً في Green Codes. متاح لمشاريع عن بُعد طويلة الأمد.">
+          Currently a full-time Senior Backend Engineer at Inisev.
         </p>
       </div>
       <div class="about-side" data-reveal>
@@ -175,16 +175,16 @@
         </div>
         <div class="about-stats stagger">
           <div class="about-stat">
-            <div class="k"><span class="counter" data-count="3">0</span><span style="color: var(--accent);">+</span></div>
+            <div class="k"><span class="counter" data-count="4">0</span><span style="color: var(--accent);">+</span></div>
             <div class="v" data-en="Years shipping" data-ar="سنوات من العمل">Years shipping</div>
           </div>
           <div class="about-stat">
-            <div class="k"><span class="counter" data-count="6">0</span></div>
+            <div class="k"><span class="counter" data-count="9">0</span></div>
             <div class="v" data-en="Production platforms" data-ar="منصات إنتاجية">Production platforms</div>
           </div>
           <div class="about-stat">
-            <div class="k"><span class="counter" data-count="2">0</span></div>
-            <div class="v" data-en="Active companies" data-ar="شركات حالية">Active companies</div>
+            <div class="k"><span class="counter" data-count="6">0</span></div>
+            <div class="v" data-en="Companies" data-ar="شركات عملت بها">Companies</div>
           </div>
           <div class="about-stat">
             <div class="k">3.44</div>
@@ -204,8 +204,8 @@
       </div>
       <div>
         <h2><span data-en="The tools" data-ar="الادوات">The tools</span> <em class="italic" data-en="I use." data-ar="التي استخدمها.">I use.</em></h2>
-        <p class="lede" data-en="A practical kit, refined over three years on production systems. PHP and Laravel sit at the centre; the rest is whatever the problem actually needs."
-                       data-ar="مجموعة أدوات عملية صُقلت عبر ثلاث سنوات من العمل على أنظمة إنتاجية. Laravel و PHP في القلب، والباقي حسب ما يتطلبه المشروع.">A practical kit, refined over three years.</p>
+        <p class="lede" data-en="A practical kit, refined over four years on production systems. PHP and Laravel sit at the centre; the rest is whatever the problem actually needs."
+                       data-ar="مجموعة أدوات عملية صُقلت عبر أربع سنوات من العمل على أنظمة إنتاجية. Laravel و PHP في القلب، والباقي حسب ما يتطلبه المشروع.">A practical kit, refined over four years.</p>
       </div>
     </div>
     <div class="stack stagger" data-reveal id="stackGrid"></div>
@@ -367,6 +367,6 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhyD6N7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="{{ asset('front/portfolio.js') }}"></script>
+  <script src="{{ asset('front/portfolio.js') }}?v={{ filemtime(public_path('front/portfolio.js')) }}"></script>
 </body>
 </html>
